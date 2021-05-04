@@ -4,6 +4,7 @@ import '../assets/css/main.css'
 import * as Yup from "yup";
 import img from '../assets/images/image.jpg'
 import logo from '../assets/images/goosen_logo.png'
+import {Link} from 'react-router-dom'
 
 let LoginSchema = Yup.object({
     password: Yup.string()
@@ -91,7 +92,7 @@ export default class Login extends React.Component {
                                         <input type='checkbox' />
                                         <span>Remember me</span>
                                     </div>
-                                    <a href='#'><span>Forgot password</span></a>
+                                    <Link href='#'><span>Forgot password</span></Link>
                                 </div>
 
                                 <button disabled={isSubmitting}>Login</button>
